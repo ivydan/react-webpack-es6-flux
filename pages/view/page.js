@@ -28,11 +28,15 @@ class Page extends Component {
     }
 
     render() {
+        let {data} = this.props;
         let div1Class = classNames({
             'div1': true,
             'btn-pressed': this.props.data.btnPress,
             'btn-over': !this.props.data.btnPress
         })
+        if(data.loading){
+           return <span>Loading</span>; 
+        }
         return (
             <div>
                 <div className={div1Class} onClick={this.handleClickPress} style={style}>
@@ -41,6 +45,7 @@ class Page extends Component {
                         classNames("format")
                     </pre>
                 </div>
+
             </div>
         )
     }

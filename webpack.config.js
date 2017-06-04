@@ -3,7 +3,7 @@ var path = require("path");
 var lessLoader = 'style!css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]!less?sourceMap=true&sourceMapContents=true';
 module.exports = {
     context: __dirname,
-    entry: "./pages/index.js",
+    entry: "./src/pages/index.js",
     output: {
         path: path.join(__dirname, "assets"),
         publicPath: "assets/",

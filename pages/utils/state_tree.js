@@ -5,6 +5,7 @@ import Baobab from "baobab";
 const rootState = {
     pages: {
         btnPress: false,
+        loading: true
     },     
 }
 
